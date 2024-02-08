@@ -1,12 +1,12 @@
 import React from 'react'
 import { BsCartFill } from "react-icons/bs";
+import './CartWidget.css'
 
 
 const CartWidget = () => {
   return (
     <div className='carrito'>
         <BsCartFill />
-        
     </div>
   )
 }
