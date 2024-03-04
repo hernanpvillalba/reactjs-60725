@@ -2,7 +2,7 @@ const productos = [
     {
         id: 1,
         title: "Alfajores",
-        description: "Alfajores",
+        description: "Contienen azucar, manteca, harina leudante, almidon de maiz, huevo, miel, cacao y esencia de vainilla",
         price: 1500,
         stock:10,
         categoria:"dulces",
@@ -11,7 +11,7 @@ const productos = [
     {
         id: 2,
         title: "Brownies",
-        description: "Brownies de chocolate",
+        description: "Contiene manteca, chocolate, huevos, azucar, cacao en polvo, esencia de vainilla y harina",
         price: 2500,
         stock:10,
         categoria:"dulces",
@@ -20,7 +20,7 @@ const productos = [
     {
         id: 3,
         title: "Huevos Rellenos",
-        description: "Huevos Rellenos",
+        description: "Contiene manteca, chocolate, huevos, azucar, cacao en polvo, esencia de vainilla y harina",
         price: 3000,
         stock:10,
         categoria:"antojos",
@@ -29,7 +29,7 @@ const productos = [
     {
         id: 4,
         title: "Torta Marquise",
-        description: "Torta Marquise",
+        description: "Contiene chocolate, crema de leche, manteca, azucar, huevos, dulce de leche repostero y merengue",
         price: 5000,
         stock:10,
         categoria:"tortas",
@@ -38,7 +38,7 @@ const productos = [
     {
         id: 5,
         title: "Pastafrola",
-        description: "Pastafrola",
+        description: "Contiene manteca, huevos, harina leudante, azucar, esencia de vainilla y sal",
         price: 4000,
         stock:10,
         categoria:"tortas",
@@ -47,7 +47,7 @@ const productos = [
     {
         id: 6,
         title: "Tortas de Fiestas",
-        description: "Tortas para fiestas",
+        description: "Contiene manteca, chocolate, huevos, azucar, cacao en polvo, esencia de vainilla y harina",
         price: 5000,
         stock:10,
         categoria:"eventos",

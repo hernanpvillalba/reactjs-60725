@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import { Card, CardHeader, Heading, CardBody, Text, CardFooter} from '@chakra-ui/react'
+import { Card, CardHeader, Heading, CardBody, Text, CardFooter, Image} from '@chakra-ui/react'
 import ItemCount from '../components/itemCount/ItemCount'
 import './ItemDetail.css'
 
-const ItemDetail = ({title, description, stock}) => {
+const ItemDetail = ({title, description, stock, pictureURL}) => {
     const [quantity, setQuantity] = useState()
     const onAdd = (cantidad) =>{
         setQuantity(cantidad)
@@ -14,6 +14,16 @@ const ItemDetail = ({title, description, stock}) => {
   return (
     <div>
         <Card align='center'>
+        <Image
+            objectFit='cover'
+            maxW={{ base: '100%', sm: '200px' }}
+            src= {pictureURL}
+            alt={title}
+            borderRadius='lg'
+            boxSize='100%'
+            h= '200px'
+
+        />
             <CardHeader>
                 <Heading size='md'> {title}</Heading>
             </CardHeader>

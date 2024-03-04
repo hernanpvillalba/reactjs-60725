@@ -11,11 +11,11 @@ const useCounter = (initialValue, inventario) => {
       count > initialValue && setCount (count - 1)
       
     }
-    return (
+    return {
       count,
       incrementarCantidad,
       reducirCantidad
-    )
-  }
+    };
+  };
 
   export default useCounter
