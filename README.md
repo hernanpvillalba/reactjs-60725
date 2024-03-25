@@ -1,9 +1,73 @@
-# React + Vite
+# Blueberry
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Pasteleria Artesanal
 
-Currently, two official plugins are available:
+![image](https://raw.githubusercontent.com/hernanpvillalba/reactjs-60725/main/imagenes/logo.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# reactjs-60725
+## Descripcion
+
+E-commerce para realizar pedidos online
+
+
+## Vista Previa
+<!-- Grabacion del uso -->
+
+## Deploy
+
+<!-- LINK -->
+
+## Construido con
+
+React
+Firebase
+Chackra
+
+
+## Dependencias Utilizadas
+
+Axios
+react-router-dom
+react-icons
+react-spinners
+react-toastify
+sweetalert2
+
+## Versionado
+
+Github
+
+## Instalacion
+
+### Pasos
+
+# List
+
+-Clonar el repositorio:
+
+    -git clone https://github.com/hernanpvillalba/reactjs-60725
+
+-Moverse a la carpeta del proyecto:
+    -cd (https://github.com/hernanpvillalba/reactjs-60725/tree/main/src)
+
+-Instalar dependencias:
+    -Ejecutar: npm i en la terminal
+
+-Compilar:
+    nom run dev
+
+
+## Estructura de tienda
+
+### Menu
+Menu fijo para poder navegar a lo largo de cualquier pagina del sitio. 
+Contiene:
+Logo con acceso directo a la pagina principal
+Dropdown con categorias de productos
+Cart para acceder al carrito y ver los productos seleccionados
+
+### Body
+Se despliegan todos los articulos disponibles y su precio
+
+## Link de Contacto
+
+https://www.linkedin.com/in/hernan-villalba-4a067258/

@@ -1,26 +1,28 @@
-import React from 'react'
-import CartWidget from '../CartWidget/CartWidget'
+import React from "react";
+import CartWidget from "../CartWidget/CartWidget";
 import {
-    Menu,
-    MenuButton,
-    MenuList,
-    MenuItem,
-    Button,
-    Heading,
-    Box
-  } from '@chakra-ui/react'
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+  Button,
+  Heading,
+  Box,
+} from "@chakra-ui/react";
 
-  import { ChevronDownIcon } from '@chakra-ui/icons'
-  import './NavBar.css'
-import { Link } from 'react-router-dom'
-
+import { ChevronDownIcon } from "@chakra-ui/icons";
+import "./NavBar.css";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
     <Box className="navbar">
       <Heading className="logo">
         <Link to="/">
-          <img src='https://raw.githubusercontent.com/hernanpvillalba/reactjs-60725/main/imagenes/logo.png' alt="logo" />
+          <img
+            src="https://raw.githubusercontent.com/hernanpvillalba/reactjs-60725/main/imagenes/logo.png"
+            alt="logo"
+          />
         </Link>
       </Heading>
 
@@ -49,4 +51,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar
+export default NavBar;

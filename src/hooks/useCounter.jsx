@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 
 const useCounter = (initialValue, inventario) => {
   const [count, setCount] = useState(initialValue);
@@ -17,4 +17,4 @@ const useCounter = (initialValue, inventario) => {
   };
 };
 
-  export default useCounter
+export default useCounter;

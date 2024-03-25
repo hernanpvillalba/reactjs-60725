@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
-import { getProductsByID } from '../../data/asyncMock'
-import ItemDetail from '../itemDetail/ItemDetail';
-import { Box, Spinner } from '@chakra-ui/react';
-import { doc, getDoc } from 'firebase/firestore';
-import { db } from '../../config/firebase';
-
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import { getProductsByID } from "../../data/asyncMock";
+import ItemDetail from "../itemDetail/ItemDetail";
+import { Box, Spinner } from "@chakra-ui/react";
+import { doc, getDoc } from "firebase/firestore";
+import { db } from "../../config/firebase";
 
 const ItemDetailContainer = () => {
   const [product, setProduct] = useState([]);
@@ -14,18 +13,18 @@ const ItemDetailContainer = () => {
 
   useEffect(() => {
     const getProduct = async () => {
-      const queryRef = doc (db, 'productos', productID)
+      const queryRef = doc(db, "productos", productID);
 
-      const response = await getDoc (queryRef)
+      const response = await getDoc(queryRef);
 
       const newProduct = {
         id: response.id,
-        ...response.data()
-      }
-      setProduct(newProduct)
-      setLoading(false)
-    }
-    getProduct()
+        ...response.data(),
+      };
+      setProduct(newProduct);
+      setLoading(false);
+    };
+    getProduct();
   }, []);
 
   return (
@@ -45,4 +44,4 @@ const ItemDetailContainer = () => {
   );
 };
 
-export default ItemDetailContainer
+export default ItemDetailContainer;

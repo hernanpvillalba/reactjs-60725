@@ -1,6 +1,6 @@
-import { Box, Image } from '@chakra-ui/react'
-import React from 'react'
-import { Link } from 'react-router-dom'
+import { Box, Image } from "@chakra-ui/react";
+import React from "react";
+import { Link } from "react-router-dom";
 
 const PageNotFound = () => {
   return (
@@ -15,4 +15,4 @@ const PageNotFound = () => {
   );
 };
 
-export default PageNotFound
+export default PageNotFound;
