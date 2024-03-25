@@ -52,8 +52,18 @@ Github
 -Instalar dependencias:
     -Ejecutar: npm i en la terminal
 
+-Crear archivo .env en la carpeta PROYECTO-REACTJS y agregar lo siguiente:
+
+    VITE_FIREBASE_APIKEY="AIzaSyD07U1GN_5Cr6wBmRUgpJSFPySLgCPvdRg"
+    VITE_FIREBASE_AUTHDOMAIN="proyecto-reactjs-60725.firebaseapp.com"
+    VITE_FIREBASE_PROJECTID="proyecto-reactjs-60725"
+    VITE_FIREBASE_STORAGEBUCKET="proyecto-reactjs-60725.appspot.com"
+    VITE_FIREBASE_MESSAGINGSENDERID="959215295174"
+    VITE_FIREBASE_APPID="1:959215295174:web:2f0c22f5af37d4b78e95c7"
+
+
 -Compilar:
-    nom run dev
+    -Ejecutar: npm run dev
 
 
 ## Estructura de tienda

@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import CartContext from "../../context/CartContext";
 import { addDoc, collection, doc, getDoc, updateDoc } from "firebase/firestore";
 import { db } from "../../config/firebase";
-import { Button, Input, Text } from "@chakra-ui/react";
+import { Box, Button, Input, Text } from "@chakra-ui/react";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
 
@@ -75,11 +75,26 @@ const Checkout = () => {
   };
 
   return (
-    <div>
+    <Box>
       <form action="">
-        <Input onChange={updateUser} name="nombre" placeholder="Nombre" />
-        <Input onChange={updateUser} name="telefono" placeholder="Telefono" />
-        <Input onChange={updateUser} name="email" placeholder="Email" />
+        <Input
+          type="text"
+          onChange={updateUser}
+          name="nombre"
+          placeholder="Nombre"
+        />
+        <Input
+          type="number"
+          onChange={updateUser}
+          name="telefono"
+          placeholder="Telefono"
+        />
+        <Input
+          type="email"
+          onChange={updateUser}
+          name="email"
+          placeholder="Email"
+        />
         <Input
           onChange={updateUser}
           name="repetirEmail"
@@ -88,7 +103,7 @@ const Checkout = () => {
         {!emailMatch && <Text color={"red.500"}>El Email no coincide </Text>}
         <Button onClick={getOrder}>Comprar</Button>
       </form>
-    </div>
+    </Box>
   );
 };
 

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import useCounter from "../../hooks/useCounter";
 import { Box, Button, Heading } from "@chakra-ui/react";
 import "./ItemCount.css";
