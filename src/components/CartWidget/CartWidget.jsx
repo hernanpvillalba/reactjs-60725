@@ -1,14 +1,23 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { BsCartFill } from "react-icons/bs";
 import './CartWidget.css'
+import { Link } from 'react-router-dom';
+import CartContext from '../../context/CartContext'
+import { Box } from '@chakra-ui/react';
 
 
 const CartWidget = () => {
-  return (
-    <div className='carrito'>
-        <BsCartFill />
-    </div>
-  )
-}
 
-export default CartWidget
+  const {getQuantity} = useContext(CartContext)
+
+
+  return (
+    <Box className="carrito">
+      <Link to='/cart'>
+      <BsCartFill /> <span>{getQuantity()}</span>
+      </Link>
+    </Box>
+  );
+};
+
+export default CartWidget;

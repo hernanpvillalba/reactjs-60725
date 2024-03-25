@@ -2,8 +2,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    background-color: rgb(139, 198, 139);
 }
-img{
-    width: 90px;
+.navbar img{
+    margin-left: .5rem;
+    padding: 5px;
+    width: 100px;
 }

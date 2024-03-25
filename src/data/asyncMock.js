@@ -6,7 +6,7 @@ const productos = [
         price: 1500,
         stock:10,
         categoria:"dulces",
-        pictureURL:'../imagenes/Alfajores.jpg'
+        pictureURL:'https://raw.githubusercontent.com/hernanpvillalba/reactjs-60725/main/imagenes/Alfajores.jpg'
     },
     {
         id: 2,
@@ -15,7 +15,7 @@ const productos = [
         price: 2500,
         stock:10,
         categoria:"dulces",
-        pictureURL:'../imagenes/Brownies.jpg'
+        pictureURL:'https://raw.githubusercontent.com/hernanpvillalba/reactjs-60725/main/imagenes/Brownies.jpg'
     },
     {
         id: 3,
@@ -24,7 +24,7 @@ const productos = [
         price: 3000,
         stock:10,
         categoria:"antojos",
-        pictureURL:'../imagenes/HuevosRellenos.jpg'
+        pictureURL:'https://raw.githubusercontent.com/hernanpvillalba/reactjs-60725/main/imagenes/HuevosRellenos.jpg'
     },
     {
         id: 4,
@@ -33,7 +33,7 @@ const productos = [
         price: 5000,
         stock:10,
         categoria:"tortas",
-        pictureURL:'../imagenes/Marquise.jpg'
+        pictureURL:'https://raw.githubusercontent.com/hernanpvillalba/reactjs-60725/main/imagenes/Marquise.jpg'
     },
     {
         id: 5,
@@ -42,7 +42,7 @@ const productos = [
         price: 4000,
         stock:10,
         categoria:"tortas",
-        pictureURL:'../imagenes/Pastafrola.jpg'
+        pictureURL:'https://raw.githubusercontent.com/hernanpvillalba/reactjs-60725/main/imagenes/Pastafrola.jpg'
     },
     {
         id: 6,
@@ -51,7 +51,7 @@ const productos = [
         price: 5000,
         stock:10,
         categoria:"eventos",
-        pictureURL:'../imagenes/eventos.jpg'
+        pictureURL:'https://raw.githubusercontent.com/hernanpvillalba/reactjs-60725/main/imagenes/eventos.jpg'
     },
 ];
 

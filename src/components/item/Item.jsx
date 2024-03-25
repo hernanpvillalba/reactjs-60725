@@ -1,43 +1,40 @@
 import React from 'react'
-import { Card, CardBody, CardFooter, Image, Stack, Heading, Text, Button } from '@chakra-ui/react'
-import ItemCount from '../itemCount/ItemCount'
+import { Card, CardBody, CardFooter, Image, Stack, Heading, Text, Button, Divider, SimpleGrid, Box } from '@chakra-ui/react'
 import { Link } from 'react-router-dom'
 
-const Item = ({title,price, pictureURL, stock, id}) => {
+const Item = ({ title, price, pictureURL, id }) => {
   return (
-    <Card className='card'
-      direction={{ base: 'column', sm: 'row' }}
-      overflow='hidden'
-      variant='outline'
+    <Card
+      direction={{ base: 'row', sm: 'column' }}
+      overflow="hidden"
+      variant="outline"
+      margin='10px'
     >
-    <Image
-    objectFit='cover'
-    maxW={{ base: '100%', sm: '200px' }}
-    src= {pictureURL}
-    alt={title}
-    borderRadius='lg'
-    boxSize='100%'
-    h= '200px'
-    />
-
-    <Stack mt='6' spacing='3' >
-      <CardBody>
-        <Heading size='md'>{title}</Heading>
+      <CardBody >
+      <Image
+        objectFit="cover"
+        maxW={{ base: "100%", sm: "200px" }}
+        src={pictureURL}
+        alt={title}
+        borderRadius="lg"
+        boxSize="100%"
+        h="200px"
+      />
+      <Stack>
+        <Heading size="md">{title}</Heading>
+        <Text variant="solid" colorScheme="green" py="4">
+          Precio: ${price}
+        </Text>
+      </Stack>
       </CardBody>
+        <Divider />
+        <CardFooter>
+          <Button variant="solid" colorScheme="green">
+            <Link to={`/producto/${id}`}>Ver Detalle</Link>
+          </Button>
+        </CardFooter>
+    </Card>
+  );
+};
 
-    <CardFooter>
-      <Button variant='solid' colorScheme='blue' mr='2'>
-        Precio: ${price}
-      </Button>
-      <Button variant='solid' colorScheme='blue'>
-        <Link to={`/producto/${id}`}>
-        Ver Detalle
-        </Link>
-      </Button>
-    </CardFooter>
-  </Stack>
-</Card>
-  )
-}
-
-export default Item
+export default Item;
