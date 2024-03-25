@@ -20,7 +20,7 @@ const NavBar = () => {
       <Heading className="logo">
         <Link to="/">
           <img
-            src="https://raw.githubusercontent.com/hernanpvillalba/reactjs-60725/main/imagenes/logo.png"
+            src="https://github.com/hernanpvillalba/reactjs-60725/blob/main/src/assets/imagenes/logo.png?raw=true"
             alt="logo"
           />
         </Link>

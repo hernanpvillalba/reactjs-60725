@@ -6,7 +6,7 @@ const productos = [
         price: 1500,
         stock:10,
         categoria:"dulces",
-        pictureURL:'https://raw.githubusercontent.com/hernanpvillalba/reactjs-60725/main/imagenes/Alfajores.jpg'
+        pictureURL:'https://github.com/hernanpvillalba/reactjs-60725/blob/main/src/assets/imagenes/Alfajores.jpg?raw=true'
     },
     {
         id: 2,
@@ -15,7 +15,7 @@ const productos = [
         price: 2500,
         stock:10,
         categoria:"dulces",
-        pictureURL:'https://raw.githubusercontent.com/hernanpvillalba/reactjs-60725/main/imagenes/Brownies.jpg'
+        pictureURL:'https://github.com/hernanpvillalba/reactjs-60725/blob/main/src/assets/imagenes/Brownies.jpg?raw=true'
     },
     {
         id: 3,
@@ -24,7 +24,7 @@ const productos = [
         price: 3000,
         stock:10,
         categoria:"antojos",
-        pictureURL:'https://raw.githubusercontent.com/hernanpvillalba/reactjs-60725/main/imagenes/HuevosRellenos.jpg'
+        pictureURL:'https://github.com/hernanpvillalba/reactjs-60725/blob/main/src/assets/imagenes/HuevosRellenos.jpg?raw=true'
     },
     {
         id: 4,
@@ -33,7 +33,7 @@ const productos = [
         price: 5000,
         stock:10,
         categoria:"tortas",
-        pictureURL:'https://raw.githubusercontent.com/hernanpvillalba/reactjs-60725/main/imagenes/Marquise.jpg'
+        pictureURL:'https://github.com/hernanpvillalba/reactjs-60725/blob/main/src/assets/imagenes/Marquise.jpg?raw=true'
     },
     {
         id: 5,
@@ -42,7 +42,7 @@ const productos = [
         price: 4000,
         stock:10,
         categoria:"tortas",
-        pictureURL:'https://raw.githubusercontent.com/hernanpvillalba/reactjs-60725/main/imagenes/Pastafrola.jpg'
+        pictureURL:'https://github.com/hernanpvillalba/reactjs-60725/blob/main/src/assets/imagenes/Pastafrola.jpg?raw=true'
     },
     {
         id: 6,
@@ -51,7 +51,7 @@ const productos = [
         price: 5000,
         stock:10,
         categoria:"eventos",
-        pictureURL:'https://raw.githubusercontent.com/hernanpvillalba/reactjs-60725/main/imagenes/eventos.jpg'
+        pictureURL:'https://github.com/hernanpvillalba/reactjs-60725/blob/main/src/assets/imagenes/eventos.jpg?raw=true'
     },
 ];
 
