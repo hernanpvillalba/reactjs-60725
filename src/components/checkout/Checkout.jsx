@@ -57,7 +57,7 @@ const Checkout = () => {
     validarTelefono();
     validarNombre();
 
-    if ((emailMatch, validPhone)) {
+    if ((emailMatch, validPhone, validName)) {
       const ordersCollection = collection(db, "orders");
       try {
         for (const item of cart) {
