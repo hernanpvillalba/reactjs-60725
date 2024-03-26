@@ -15,6 +15,9 @@ const Checkout = () => {
   });
 
   const [emailMatch, setEmailMatch] = useState(true);
+  const [validPhone, setValidPhone] = useState(true);
+  const [validName, setValidName] = useState(true);
+
   const { cart, getTotal, clearCart } = useContext(CartContext);
   const navigate = useNavigate;
 
@@ -33,10 +36,28 @@ const Checkout = () => {
     }
   };
 
+  const validarTelefono = () => {
+    if (user.telefono.length === 10) {
+      setValidPhone(true);
+    } else {
+      setValidPhone(false);
+    }
+  };
+
+  const validarNombre = () => {
+    if (user.nombre.length >= 3) {
+      setValidName(true);
+    } else {
+      setValidName(false);
+    }
+  };
+
   const getOrder = async () => {
     validarEmail();
+    validarTelefono();
+    validarNombre();
 
-    if (emailMatch) {
+    if ((emailMatch, validPhone)) {
       const ordersCollection = collection(db, "orders");
       try {
         for (const item of cart) {
@@ -101,6 +122,17 @@ const Checkout = () => {
           placeholder="Repetir Email"
         />
         {!emailMatch && <Text color={"red.500"}>El Email no coincide </Text>}
+        {!validPhone && (
+          <Text color={"red.500"}>
+            Por favor, introduce un número de teléfono válido de 10 dígitos.
+          </Text>
+        )}
+        {!validName && (
+          <Text color={"red.500"}>
+            Por favor, introduce un nombre válido (solo letras y al menos 3
+            caracteres).
+          </Text>
+        )}
         <Button onClick={getOrder}>Comprar</Button>
       </form>
     </Box>
